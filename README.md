@@ -698,12 +698,12 @@ The Artifact Registry repository and any retained cloud resources may require se
 
 ## 15. Extra-Credit Implementation
 
-### RustFS Object Storage (+5 target)
+### RustFS Object Storage 
 
 MinIO was replaced with RustFS, installed using Helm and configured with persistent Kubernetes volumes. Both the REST service and Worker communicate with RustFS using the S3-compatible API.
 
-### Google Kubernetes Engine (+5 target)
+### Google Kubernetes Engine 
 
 The complete application runs on GKE, including REST API, Redis, DEMUCS Worker, and RustFS. The REST application is publicly accessible through a GKE-managed ingress and was successfully tested through that ingress.
 
-Both extra-credit features were implemented and functionally verified. Awarding extra credit remains at the course grader's discretion.
+Both extra-credit features were implemented and functionally verified. 
