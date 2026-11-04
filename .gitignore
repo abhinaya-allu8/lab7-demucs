@@ -10,3 +10,5 @@ rustfs-secret.yaml
 last-songhash.txt
 output-test/
 rustfs-config.local.yaml
+
+verification-results/
