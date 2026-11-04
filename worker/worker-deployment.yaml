@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: demucs-worker
-          image: lab7-worker:dev
+          image: us-central1-docker.pkg.dev/lab2-507502/lab7-images/lab7-worker:v2
           imagePullPolicy: IfNotPresent
           env:
             - name: REDIS_HOST
@@ -24,7 +24,7 @@ spec:
             - name: REDIS_PORT
               value: "6379"
             - name: S3_ENDPOINT
-              value: rustfs.rustfs-ns.svc.cluster.local:9000
+              value: rustfs-svc.rustfs-ns.svc.cluster.local:9000
             - name: S3_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
